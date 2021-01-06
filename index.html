@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/styles.css">
+<title>Stephanie Graf WDD330 Portfolio</title>
+</head>
+<body class="body-group">
+    <header class="header-group">
+        <div>
+          <div class="heading">
+    <h1 class="pageTitle">Stephanie Graf's Portfolio Home Page</h1>
+</div>
+</div>
+</header>
+
+<div class="hero-image">
+</div>
+	
+	<div class="portfolioDiv">
+		<ol id="portfolioIndex">
+		</ol>		
+    </div>
+
+    <script src="js/main.js"></script>
+
+    <footer class="footer-content">
+        <p>&copy; 2021 | Stephanie Graf | California |
+          <a href="https://www.byui.edu/online " target="_blank">BYUI Online Learning</a> </p>
+        <script>
+          const hambutton = document.querySelector(".ham");
+          hambutton.addEventListener("click", toggleMenu, false);
+    
+          function toggleMenu() {
+            document.querySelector(".navigation").classList.toggle("responsive");
+          }
+        </script>
+      </footer>
+</body>
+</html>
+

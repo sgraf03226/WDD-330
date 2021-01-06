@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@500&family=Roboto+Slab:wght@900&display=swap");
+
+/*Body styles*/
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif; }
+  
+  .hero-image {
+    background-image: url("https://picsum.photos//id/1082/1920/400");
+    background-color: #838080;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; }
+  
+  h1, h3 {
+    text-align: center; }
+  
+  h1 {
+    font-family: "Roboto Slab", serif;
+    padding-top: 20px;
+    margin-top: 0; }
+  
+  h3 {
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    font-family: "Oswald", sans-serif; }
+
+.portfolioDiv
+{
+	background: radial-gradient(circle, blue, white);
+	border: solid 2px black;
+}
+
+.pageTitle
+{
+	text-align: center;
+}
+
+.portfolioDiv a
+{
+	text-decoration: none;
+}
+
+.portfolioDiv a:link
+{
+	color: white;
+}
+
+.liClass /* This is the active link class */
+{
+	color: black;
+}
+.liClass a:link  /* a link will be black when unvisited */
+{
+	color: black;
+}
+
+.liClass a:visited
+{
+	color: white;
+}
+.liClass a:hover
+{
+	color: white;
+}
+
+.liInactiveClass /* THis is the inactive link class */
+{
+	color: rgb(177, 7, 7);
+}
+.liInactiveClass a:link  /* a link will be black when unvisited */
+{
+	color:  rgb(177, 7, 7);
+}
+.liInactiveClass a:visited
+{
+	color: white;
+}
+.liInactiveClass a:hover
+{
+	color: goldenrod;
+}
+
+.aClass
+{
+	width: 140px;
+	display: inline-block;
+	margin: 20px 0 0 20px;
+	text-decoration: none;
+	text-align: center;
+	padding: 3px;
+	border: solid 1px black;
+	border-radius: 8px;
+	background-color: firebrick;
+	color: white;
+}
+
+.aTBDClass
+{
+	width: 140px;
+	display: inline-block;
+	margin: 20px 0 0 20px;
+	text-decoration: none;
+	text-align: center;
+	padding: 3px;
+	border: solid 1px black;
+	border-radius: 8px;
+	background-color: gray;
+	opacity: 50%;
+	color: black;
+}
+
+/*Readings styles*/
+.readingSection
+{
+	border: 2px solid red;
+	background: radial-gradient(circle, #C43133, white);
+}
+.readingSection p
+{
+	margin: 2px 0 2px 0;
+}
+.readingSection a
+{
+	display: inline-block;
+	margin: 20px 0 0 20px;
+	text-decoration: none;
+	padding: 3px;
+	border: solid 1px black;
+	border-radius: 8px;
+	background-color: firebrick;
+	color: white;
+}
+.readingTitle
+{
+	text-align: center;
+	color: black;
+}
+.readingCategory
+{
+	margin-left: 20px;
+}
+
+/*Reports styles*/
+.reportSection
+{
+	clear: left;
+	border: 2px solid blue;
+	background: radial-gradient(circle, blue, white);
+}
+
+.reportTitle
+{
+	text-align: center;
+	color: black;
+}
+.reportCategory
+{
+	margin-left: 20px;
+}
+.reportSection a
+{
+	display: inline-block;
+	margin: 20px 0 0 20px;
+	text-decoration: none;
+	padding: 3px;
+	border: solid 1px black;
+	border-radius: 8px;
+	background-color: firebrick;
+	color: white;
+}
+.reportSection a:link
+{
+	color: white;
+}
+.reportSection a:visited
+{
+	color: white;
+}
+.reportSection p
+{
+	margin: 2px 0 2px 0;
+}
+.footerSection
+{
+	border: 2px solid red;
+	background: radial-gradient(circle, #C43133, white);
+}
+
+/*Footer Styles*/
+nav, footer {
+    background-color: silver;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
