@@ -1,194 +1,203 @@
-nav, footer {
-  background-color: silver;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: space-around; }
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@500&family=Roboto+Slab:wght@900&display=swap");
 
-nav li .current {
-  background-color: rgba(255, 255, 255, 0.6); }
-
-.navigation {
-  list-style: none;
-  padding: 0em; }
-
-.navigation li:first-child {
-  display: block; }
-
-.navigation li {
-  display: none; }
-
-.navigation a {
-  display: block;
-  color: black;
-  padding: 0.5rem;
-  text-align: center;
-  text-decoration: none; }
-
-.navigation .active {
-  background-color: rgb(13, 37, 109); }
-
-.navigation a:hover {
-  color: #000;
-  background-color: rgba(255, 255, 255, 0.719);
-  font-weight: 700; }
-
-.responsive li {
-  display: block; }
-
+/*Body styles*/
 body {
-  padding: 0;
-  margin: 0;
-  font-family: "Montserrat", sans-serif; }
-
-.hero-image {
-  background-image: url("https://picsum.photos//id/1082/1920/400");
-  background-color: #838080;
-  height: 400px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative; }
-
-h1, h3 {
-  text-align: center; }
-
-h1 {
-  font-family: "Roboto Slab", serif;
-  padding-top: 20px;
-  margin-top: 0; }
-
-h3 {
-  padding-bottom: 20px;
-  margin-bottom: 0;
-  font-family: "Oswald", sans-serif; }
-
-.content-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  max-width: 80%;
-  margin: auto;
-  padding: 20px; }
-
-@media (min-width: 700px) {
-  .navigation {
-    display: flex; }
-
-  .navigation li {
-    display: block;
-    flex: 1 1 100%; }
-
-  .navigation li a {
-    margin-left: 20px;
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif; }
+  
+  .hero-image {
+    background-image: url("https://picsum.photos//id/1082/1920/400");
+    background-color: #838080;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; }
+  
+  h1, h3 {
     text-align: center; }
+  
+  h1 {
+    font-family: "Roboto Slab", serif;
+    padding-top: 20px;
+    margin-top: 0; }
+  
+  h3 {
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    font-family: "Oswald", sans-serif; }
 
-  .navigation li:first-child {
-    display: none; }
+.portfolioDiv
+{
+	background: radial-gradient(circle, blue, white);
+	border: solid 2px black;
+}
 
-  .content-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    max-width: 80%;
-    margin: auto;
-    padding: 20px; } }
-@media (min-width: 1000px) {
-  .navigation {
-    display: flex; }
+.pageTitle
+{
+	text-align: center;
+}
 
-  .navigation li {
-    display: block;
-    flex: 1 1 100%; }
+.portfolioDiv a
+{
+	text-decoration: none;
+}
 
-  .navigation li a {
-    margin-left: 20px;
-    text-align: center; }
+.portfolioDiv a:link
+{
+	color: white;
+}
 
-  .navigation li:first-child {
-    display: none; } 
- }
- .grid-container {
-    display: grid;
-    grid-template-columns: 15% 15% 15% 15% 15% 15%;
-    grid-gap: 12px;
-    background-color: #efefef;
-    padding: 10px;
-     width: 600px;
+/*active link class*/
+.liClass 
+{
+	color: black;
+}
+
+/* active unvisited link class*/
+.liClass a:link  
+{
+	color: black;
+}
+
+.liClass a:visited
+{
+	color: white;
+}
+.liClass a:hover
+{
+	color: white;
+}
+
+/*inactive link classes*/
+.liInactiveClass 
+{
+	color: rgb(177, 7, 7);
+}
+.liInactiveClass a:link
+{
+	color:  rgb(177, 7, 7);
+}
+.liInactiveClass a:visited
+{
+	color: white;
+}
+.liInactiveClass a:hover
+{
+	color: goldenrod;
+}
+
+.aClass
+{
+	width: 140px;
+	display: inline-block;
+	margin: 20px 0 0 20px;
+	text-decoration: none;
+	text-align: center;
+	padding: 3px;
+	border: solid 1px black;
+	border-radius: 8px;
+	background-color: firebrick;
+	color: white;
+}
+
+.aTBDClass
+{
+	width: 140px;
+	display: inline-block;
+	margin: 20px 0 0 20px;
+	text-decoration: none;
+	text-align: center;
+	padding: 3px;
+	border: solid 1px black;
+	border-radius: 8px;
+	background-color: gray;
+	opacity: 50%;
+	color: black;
+}
+
+/*Readings styles*/
+.readingSection
+{
+	border: 2px solid red;
+	background: radial-gradient(circle, #C43133, white);
+}
+.readingSection p
+{
+	margin: 2px 0 2px 0;
+}
+.readingSection a
+{
+	display: inline-block;
+	margin: 20px 0 0 20px;
+	text-decoration: none;
+	padding: 3px;
+	border: solid 1px black;
+	border-radius: 8px;
+	background-color: firebrick;
+	color: white;
+}
+.readingTitle
+{
+	text-align: center;
+	color: black;
+}
+.readingCategory
+{
+	margin-left: 20px;
+}
+
+/*Reports styles*/
+.reportSection
+{
+	clear: left;
+	border: 2px solid blue;
+	background: radial-gradient(circle, blue, white);
+}
+
+.reportTitle
+{
+	text-align: center;
+	color: black;
+}
+.reportCategory
+{
+	margin-left: 20px;
+}
+.reportSection a
+{
+	display: inline-block;
+	margin: 20px 0 0 20px;
+	text-decoration: none;
+	padding: 3px;
+	border: solid 1px black;
+	border-radius: 8px;
+	background-color: firebrick;
+	color: white;
+}
+.reportSection a:link
+{
+	color: white;
+}
+.reportSection a:visited
+{
+	color: white;
+}
+.reportSection p
+{
+	margin: 2px 0 2px 0;
+}
+.footerSection
+{
+	border: 2px solid red;
+	background: radial-gradient(circle, #C43133, white);
+}
+
+/*Footer Styles*/
+nav, footer {
+    background-color: silver;
+    text-align: center;
+    display: flex;
     align-items: center;
- }
- .grid-start-1 {
-    grid-column-start: 1;
- }
- .grid-start-2 {
-    grid-column-start: 2;
- }
- .grid-start-3 {
-    grid-column-start: 3;
- }
- .grid-start-4 {
-    grid-column-start: 4;
- }
- .grid-start-5 {
-    grid-column-start: 5;
- }
- .grid-start-6 {
-    grid-column-start: 6;
- }
- .grid-end-2 {
-    grid-column-end: 2;
- }
- .grid-end-3 {
-    grid-column-end: 3;
- }
- .grid-end-4 {
-    grid-column-end: 4;
- }
- .grid-end-5 {
-    grid-column-end: 5;
- }
- .grid-end-6 {
-    grid-column-end: 6;
- }
- .grid-end-7 {
-    grid-column-end: 7;
- }
- table {
-    border-collapse: collapse;
- }
- th, td {
-    border: 1px solid #cccccc;
-    padding: 10px;
-    text-align: left;
- }
- label {
-    font-size: 12px;
-    text-align: right;
- }
- input,
- select {
-    height: 30px;
-    padding-left: 10px;
- }
- input[type="radio"] + label {
-    /* margin-left: 4px; */
-    position: relative;
-    top: -11px;
- }
- button {
-    height: 50px;
- }
- .error {
-    display: none;
-    font-size: 12px;
-    color: #ff0000;
-    grid-column: 2 / span 5;
- }
- .error p {
-    margin-top: 0;
- }
- .show {
-    display: initial;
- }
- .right {
-    text-align: right;
- }
+    justify-content: space-around; }
