@@ -37,10 +37,32 @@ nav li .current {
 .responsive li {
   display: block; }
 
+/*Header*/
+.pageTitle {
+    background-color: silver;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.heading a {
+    display: inline-block;
+	margin: 0px 20px;
+	text-decoration: none;
+	padding: 3px;
+	border: solid 1px black;
+	border-radius: 8px;
+	background-color: gray;
+    color: white;
+  }
+
+/*body*/
 body {
   padding: 0;
   margin: 0;
   font-family: "Montserrat", sans-serif; }
+
 
 .hero-image {
   background-image: url("https://picsum.photos//id/1082/1920/400");
@@ -171,7 +193,6 @@ h3 {
     padding-left: 10px;
  }
  input[type="radio"] + label {
-    /* margin-left: 4px; */
     position: relative;
     top: -11px;
  }
@@ -192,4 +213,56 @@ h3 {
  }
  .right {
     text-align: right;
+ }
+ /*Reading*/
+.reading
+{
+	border: 2px solid rgb(7, 99, 102);
+    background: radial-gradient(circle, #0e9abda4, white);
+    text-align: center;
+    text-emphasis: none;
+}
+.readingTitle
+{
+	text-align: center;
+	color: black;
+}
+.readingCategory
+{
+	margin-left: center;
+}
+.readingText{
+   padding-left: 20%;
+   padding-right: 20%
+}
+/*Report*/
+.report
+{
+	clear: left;
+	border: 2px solid seagreen ;
+	background: radial-gradient(circle, seagreen, white);
+}
+.reportTitle
+{
+	text-align: center;
+	color: black;
+}
+.reportCategory
+{
+	margin-left: 20px;
+}
+.reportSection a
+{
+	display: inline-block;
+	margin: 20px 0 0 20px;
+	text-decoration: none;
+	padding: 3px;
+	border: solid 1px black;
+	border-radius: 8px;
+	background-color: lightgreen;
+	color: white;
+}
+.reportText{
+    padding-left: 20%;
+    padding-right: 20%
  }
