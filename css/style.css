@@ -219,8 +219,7 @@ h3 {
 {
 	border: 2px solid rgb(7, 99, 102);
     background: radial-gradient(circle, #0e9abda4, white);
-    text-align: center;
-    text-emphasis: none;
+    
 }
 .readingTitle
 {
@@ -229,7 +228,7 @@ h3 {
 }
 .readingCategory
 {
-	margin-left: center;
+	margin-left: 20px;
 }
 .readingText{
    padding-left: 20%;
