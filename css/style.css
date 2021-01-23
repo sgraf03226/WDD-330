@@ -265,3 +265,48 @@ h3 {
     padding-left: 20%;
     padding-right: 20%
  }
+/*examples*/
+ button{
+  padding:.5rem;
+  margin:.5rem 1rem;
+  border-radius: 5px;
+  background-color: turquoise;
+  color: #26211F;
+}
+
+a {
+  color: #26211F;
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
+}
+a:hover {
+  font-size: 1.2em;
+  color: #9BB1BF;
+}
+
+#score, #question, #result, #info {
+  width:50%;
+  padding:.5rem;
+  margin:.5rem 1rem;
+  border-radius: 5px;
+  background-color: lightyellow;
+  color: #26211F;
+}
+
+.highlight {
+  background-color: springgreen !important;
+}
+
+ #click, #dblclick, #mouse, #once {
+  width: 100px;
+  height: 100px;
+  padding:.5rem;
+  margin: .5rem 1rem;
+  background-color: #DFEBF2;
+ }
+
+
+
+

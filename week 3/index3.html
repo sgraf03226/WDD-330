@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../css/style.css">
+<title>Week 3</title>
+</head>
+
+<body class="body-group">
+    <header class="header-group">
+        <div>
+          <div class="heading">
+    <h1 class="pageTitle">Week 3</h1>
+    <a href="../index.html">Home</a>
+</div>
+</div>
+</header>
+
+<div class="hero-image">
+</div>
+
+<body>
+	<section class="reading">
+		
+		<h2 class="readingTitle">Reading for Week 3</h2>
+		<h3 class="readingCategory">Javascript: Novice to Ninja</h3>	
+		<h3 class="readingCategory">Chapter 5</h3>
+			<p class="readingText"> ~ Most of this chapter was review..</p>
+            <p class="readingText"> ~ JS objects are collections of properties, properties are associations
+                between a name and a value. </p>
+            <p class="readingText"> ~ If a properties value is a function, then it is called
+                a method. </p>
+            <p class="readingText"> ~ Object literals in JS are a list of name-value pairs seperaated by commas
+                and wrapped in curly braces. The purpose of an object literal is to encapsulate data
+                and minimize the use of global variables.</p>
+            <p class="readingText"> ~ Date object properties require getter and setter methods.</p>
+            <div class='readingText'>
+                <h3>Quiz Ninja</h3>
+                <button onclick="game.start(quiz)">Quiz Ninja</button>
+              </div>
+
+        <h3 class="readingCategory">Chapter 6</h3>
+        <p class="readingText"> ~ Node lists are similar to arrays but do not use the 
+            array methods (splice, slice and join). They can be converted to arrays using the 
+            spread operator or Array.form.</p>
+        <p class="readingText"> ~ Classes in JS can be set using setAttribute() method or using the className property.
+            If there are multiple classes, the className property will overwrite those existing classes. Instead, to 
+            add a class use classList.add(). You can then turn a class on or off using classList. toggle().</p>
+
+        <div class='readingText'>
+            <h3>Quiz Ninja!</h3>
+            <button id='start'>Click to Start</button>
+            <div id='score'>Score: <strong>0</strong></div>
+            <div id='question'>Question</div>
+            <div id='result'>Result</div>
+            <div id='info'>Info</div>
+          </div>      
+
+        <h3 class="readingCategory">Chapter 7</h3>
+        <p class="readingText"> ~ For event handling, JS uses the non-blocking approach.</p>
+        <p class="readingText"> ~ JS has a lot of events, which are reactions in HTML. Here is a quick review and 
+            examples of JS events.
+            <a href="https://www.w3schools.com/js/js_events.asp" target="_blank">JavaScript Events</a></p>
+        </p> 
+         <h3>Event Examples</h3>
+         <div class='readingText'>
+        <p id='click'>Click on Me (just adds click to the event listener)</p>
+        <p id='dblclick'>Double Click on Me</p>
+        <p id='mouse'>Hover Over Me</p>
+    </div>
+    <div class='readingText'>
+        <h4>Removing Event Listeners</h4>
+        <p id='once'>Clicking here will remove the event listener.
+        </p>
+    </p> ~ Clicking again will not turn it back on. </p>
+    </div>
+    <div class='readingText'>
+        <h4>Stopping Default Behavior</h4>
+        <p>
+            <a id='broken' href='https://sitepoint.com'>Broken Link</a>
+        </p>
+    </div>
+    
+	
+	<section class="report">
+		<h2 class="reportTitle">Week 3 Report/Scrum Meeting</h2>
+		<h3 class="reportCategory">What did I do since the last meeting?</h3>
+			<p class="reportText">I spent this week reviewing and learning more about JavaScript. I also
+                completed the team assignment but since I was in the hospital and could not meet with him we 
+                emailed eachother and talked it over. I completed all of the assigned reading and completed some of
+                the examples.
+            </p>
+		<h3 class="reportCategory">What am I going to do next?</h3>
+			<p class="reportText">Next week I will work to complete week four's assignments and reading.
+            It looks like the focus will be on JavaScript forms and object oriented programming.</p>
+		<h3 class="reportCategory">What are my blockers?</h3>
+			<p class="reportText"> My blockers this next week will be a foggy mind from heavy pain and nausea medications. To 
+                make sure that I understand what I am reading, I will need to read through at least twice and triple check all of 
+                the work that I do. I will need to be patient and schedule out extra time in order
+                to get everything done and to let the concepts sink in.
+            </p>
+		<h3 class="reportCategory">Questions</h3>
+			<p class="reportText">I was able to resolve all questions on my own this week and even bounced ideas
+                and lessons off of my husband to expand my knowledge.</p>
+    </section>
+    
+    <script src = "examples.js"></script>
+
+    <footer class="footer-content">
+        <p>&copy; 2021 | Stephanie Graf | California |
+          <a href="https://www.byui.edu/online " target="_blank">BYUI Online Learning</a>
+          <a href="../index.html">Home</a> </p>
+        <script>
+          const hambutton = document.querySelector(".ham");
+          hambutton.addEventListener("click", toggleMenu, false);
+    
+          function toggleMenu() {
+            document.querySelector(".navigation").classList.toggle("responsive");
+          }
+        </script>
+      </footer>
+</body>
+</html>
