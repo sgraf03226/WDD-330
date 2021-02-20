@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../css/style.css">
+<title>Week 7</title>
+</head>
+
+<body class="body-group">
+    <header class="header-group">
+        <div>
+          <div class="heading">
+    <h1 class="pageTitle">Week 3</h1>
+    <a href="../index.html">Home</a>
+</div>
+</div>
+</header>
+
+<div class="hero-image">
+</div>
+
+<body>
+	<section class="reading">
+		
+		<h2 class="readingTitle">Reading for Week 7</h2>
+		<h3 class="readingCategory">Javascript: Novice to Ninja</h3>	
+		<h3 class="readingCategory">Chapter 11</h3>
+			<p class="readingText"> ~ Functions in JavaScript are first-class functions. This means 
+                functions can be passed as arguements to other functions, assigning them to variables, 
+                or storing them in data structures.
+            </p>
+            <p class="readingText"> ~ Once a temporary variable is defined, it is impossible to remove 
+                from scope. </p>
+            <p class="readingText"> ~ Promise objects represent the eventual completion of an asynchronous 
+                operation and it's resulting value. It is a proxy value that might not be known when the promise 
+                is created. Those asynchronous functions are callbacks.</p>
+            <p class="readingText"> ~ There are three Promise states: Pending, neither fulfilled nor rejected.
+                Fulfilled, the operation was completed successfully. Rejected, the operation failed.
+            </p>
+            <p class="readingText"> ~ The process of turing a single function into a series of functions is called 
+                currying. It is the partial application of the functions.</p>
+            
+
+        <h3 class="readingCategory">Chapter 13</h3>
+        <p class="readingText"> ~ Fetch API is the standard to request/send asynchronous data. 
+            It provides fetch() (a global method) that has the arguement of the URL of the wanted resource. 
+            This fetch() returns a promise, the response returned from the URL.
+        </p>
+        <p class="readingText"> ~ The Same-Origin Policy is a security concept. It allows a web page to 
+            access data from a second web page if they both have the same origin. Otherwise it will block 
+            all requests from another page if it has a different origin (domain) from the page making the 
+            request. 
+        </p>
+  
+
+    
+	
+	<section class="report">
+		<h2 class="reportTitle">Week 7 Report/Scrum Meeting</h2>
+		<h3 class="reportCategory">What did I do since the last meeting?</h3>
+			<p class="reportText">I spent this week working on the team activity and learning
+                more about AJAX. 
+            </p>
+		<h3 class="reportCategory">What am I going to do next?</h3>
+			<p class="reportText">Next week I will work to complete week eight's assignments and reading.
+            It looks like the focus will be on transforms and transitions.</p>
+		<h3 class="reportCategory">What are my blockers?</h3>
+			<p class="reportText"> My blocker this week is balance. Sometimes I get stuck on a concept and my frustration
+                towards it keeps me from moving on and coming back to the problem. This leads me to not properly
+                complete everything that I need to.
+            </p>
+		<h3 class="reportCategory">Questions</h3>
+			<p class="reportText">I was able to resolve all questions on my own this week and even bounced ideas
+                and lessons off of my husband to expand my knowledge.</p>
+    </section>
+    
+    <script src = "examples.js"></script>
+
+    <footer class="footer-content">
+        <p>&copy; 2021 | Stephanie Graf | California |
+          <a href="https://www.byui.edu/online " target="_blank">BYUI Online Learning</a>
+          <a href="../index.html">Home</a> </p>
+        <script>
+          const hambutton = document.querySelector(".ham");
+          hambutton.addEventListener("click", toggleMenu, false);
+    
+          function toggleMenu() {
+            document.querySelector(".navigation").classList.toggle("responsive");
+          }
+        </script>
+      </footer>
+</body>
+</html>
