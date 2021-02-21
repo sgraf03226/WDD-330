@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="./to_do_style.css">
+
+<title>To Do List</title>
+
+<script type="module" src="to_do.js"></script>
+
+</head>
+
+<body>
+  <div id="divToDoFrame" class="divToDoFrame">
+    <div class="divToDoTitleFrame1">
+      <button class="addToDoButton" id="addToDo">Add New To Do</button>
+      <h1 class="toDoTitle">To Do List</h1>
+      <p class="toDoTitle"><span>&#10003;</span> When complete, check the box!</p>
+    </div>
+    <div id="divToDoList" class="divToDoList">
+      <div id="divNewContent" class="divNewContent">
+      </div>
+      <h3 id="showToDoListTitle" class="showToDoListTitle"></h3>
+      <ul id="toDoList" class="toDoList">
+      </ul>
+    </div>
+    <div id="divToDoStatus" class="divToDoStatus">
+      <h2 id="remainingTasks" class="remainingTasks"></h2>
+      <h2 id="completedTasks" class="completedTasks"></h2>
+      <button class="showAllButton" id="showAllButton">Show All</button>
+      <button class="showActiveButton" id="showActiveButton">Show Active</button>
+      <button class="showCompletedButton" id="showCompletedButton">Show Completed</button>
+    </div>
+  </div>
+</body>
+</html>
