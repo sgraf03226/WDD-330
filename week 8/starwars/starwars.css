@@ -1,0 +1,204 @@
+@charset "utf-8";
+
+html
+{
+  background-color: azure;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.outsideFrame
+{
+ height: 100%;
+}
+.topDisplay
+{
+  color: black;
+  padding: 20px;
+  font-size: 15px;
+  text-align: center;
+  margin: 20px 20px 0 20px;
+}
+
+.outputDisplay
+{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+.outputDiv1
+{
+  grid-column-start: 2;
+  text-align: center;
+  justify-self: right;
+}
+
+.outputDiv2
+{
+  grid-column-start: 3;
+  text-align: center;
+  align-self: start;
+}
+
+.outputDiv3
+{
+  grid-column-start: 4;
+  text-align: center;
+  justify-self: left;
+}
+
+.outputDiv4
+{
+  grid-column: 2 / 4;
+  padding: 0px 0px 0 200px;
+  color: goldenrod;
+}
+
+.swpButton
+{
+  width: 135px;
+  margin: 40px 20px 15px 0;
+	border: 2px solid black;
+	border-radius: 10px;
+	font-size: 13px;
+	padding: 10px;
+	text-align: center;
+	background-color: mediumpurple;
+	color: white;
+	cursor: pointer;
+}
+
+.swsButton
+{
+  width: 135px;
+  margin: 40px 0px 15px 20px;
+	border: 2px solid black;
+	border-radius: 10px;
+	font-size: 13px;
+	padding: 10px;
+	text-align: center;
+	background-color: mediumpurple;
+	color: white;
+	cursor: pointer;
+}
+
+.nextButton
+{
+  width: 75px;
+  margin: 40px 0px 0px 0;
+	border: 2px solid black;
+	border-radius: 10px;
+	font-size: 10px;
+	padding: 10px;
+	text-align: center;
+	background-color: mediumpurple;
+	color: white;
+	cursor: pointer;
+}
+
+.prevButton
+{
+  width: 75px;
+  margin: 40px 40px 0px 0;
+
+	border: 2px solid black;
+	border-radius: 10px;
+	font-size: 10px;
+	padding: 10px;
+	text-align: center;
+	background-color: mediumpurple;
+	color: white;
+	cursor: pointer;
+  grid-column-start: 2;
+}
+
+.peopleCount
+{
+  font-size: 20px;
+  margin-bottom: 0px;
+  color: black;
+}
+
+.shipCount
+{
+  font-size:20px;
+  margin-bottom: 0px;
+  color: black;
+  text-align: center;
+}
+
+.shipRange
+{
+  font-size: 15px;
+  color: black;
+  text-align: center;
+}
+
+.peopleRange
+{
+  font-size: 15px;
+  color: black;
+}
+
+li
+{
+  font-size: 15px;
+  text-align: left;
+  list-style-position: inside;
+  list-style-type: none;
+}
+
+.listTitle
+{
+  list-style-type: none;
+  font-size: 20px;
+  padding-left: 0;
+}
+
+
+h1.detailsTitle
+{
+  color: midnightblue;
+  font-size: 30px;
+  justify-self: center;
+}
+
+.detailsTitle
+{
+  justify-self: center;
+}
+
+.definitions
+{
+    font-size: 10px;
+}
+
+.definitionsTitle
+{
+  font-size: 15px;
+}
+ul
+{
+  color: black;
+}
+
+.nameLink
+{
+  color: darkgoldenrod;
+}
+
+.rangeLink
+{
+  color: black;
+  font-size: 12px;
+  text-align: center;
+}
+
+.rangeLink a
+{
+  display: inline-block;
+  color: black;
+  padding: 0 0 5px 0;
+}

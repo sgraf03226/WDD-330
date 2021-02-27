@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../css/style.css">
+<title>Week 8</title>
+</head>
+
+<body class="body-group">
+    <header class="header-group">
+        <div>
+          <div class="heading">
+    <h1 class="pageTitle">Week 8</h1>
+    <a href="../index.html">Home</a>
+</div>
+</div>
+</header>
+
+<div class="hero-image">
+</div>
+
+<body>
+	<section class="reading">
+		
+		<h2 class="readingTitle">Reading for Week 8</h2>
+		<h3 class="readingCategory">HTML5 and CSS3 for the Real World</h3>	
+		<h3 class="readingCategory">Chapter 8</h3>
+			<p class="readingText"> ~ Transforms allow you to rotate, scale or skew elements.
+                 Unfortunately transforms do not work on inline elements and you will need to 
+                 add display: inline-block.</p>
+            <p class="readingText"> ~ Translation functions allow the movement of elements to the 
+                left, right, up, or down. </p>
+            <p class="readingText"> ~ Transitions will allow the values of CSS properties to change
+                over time (simple animations). CSS animations however, allow control over each step 
+                of the animation using keyframes. A keyframe is a snapshot that defines the start 
+                or endpoint of smooth transitions.</p>
+
+        <h3 class="readingCategory">Chapter 12</h3>
+        <p class="readingText"> ~ To create a canvas element, you must create the element in the element 
+            declaration and proide it with an ID, width, and height.
+        </p>
+        <p class="readingText"> ~ Different from canvas, SVG images are readily available through the DOM.
+            Becuase SVG's are complex, an image editor (Inkscape) is needed to to create an image.
+        </p>
+        <p class="readingText"> ~  Event listeners are used for drag and drop options.
+        </p>
+
+        <div class='readingText'>
+            <h3>Group Assighment</h3>
+            <a href="starwars/starwars.html">Press Here for Star Wars!</a>
+          </div>  
+    
+	
+	<section class="report">
+		<h2 class="reportTitle">Week 7 Report/Scrum Meeting</h2>
+		<h3 class="reportCategory">What did I do since the last meeting?</h3>
+			<p class="reportText">I spent this week working on the team activity and learning
+                about transforms, transitions, Canvas and SVGs. I also brushed up on various types
+                of event listeners on my own. They are extremely useful. 
+            </p>
+		<h3 class="reportCategory">What am I going to do next?</h3>
+			<p class="reportText">Next week I will work to complete week nine's assignments and reading.
+            It looks like the focus will be on HTML5 APIs and the Window Onject. I will also 
+            work on my project proposal.</p>
+		<h3 class="reportCategory">What are my blockers?</h3>
+			<p class="reportText"> I felt like this was a better week. I had things under control and
+                gave myself plenty of time to complete the assignments. I even got to do some research on
+                other topics on my own!
+            </p>
+		<h3 class="reportCategory">Questions</h3>
+			<p class="reportText">I was able to resolve all questions on my own this week and even bounced ideas
+                and lessons off of my husband to expand my knowledge.</p>  
+    </section>
+
+    <footer class="footer-content">
+        <p>&copy; 2021 | Stephanie Graf | California |
+          <a href="https://www.byui.edu/online " target="_blank">BYUI Online Learning</a>
+          <a href="../index.html">Home</a> </p>
+        <script>
+          const hambutton = document.querySelector(".ham");
+          hambutton.addEventListener("click", toggleMenu, false);
+    
+          function toggleMenu() {
+            document.querySelector(".navigation").classList.toggle("responsive");
+          }
+        </script>
+      </footer>
+</body>
+</html>
