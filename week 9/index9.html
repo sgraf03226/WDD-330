@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../css/style.css">
+<title>Week 9</title>
+</head>
+
+<body class="body-group">
+    <header class="header-group">
+        <div>
+          <div class="heading">
+    <h1 class="pageTitle">Week 9</h1>
+    <a href="../index.html">Home</a>
+</div>
+</div>
+</header>
+
+<div class="hero-image">
+</div>
+
+<body>
+	<section class="reading">
+		
+		<h2 class="readingTitle">Reading for Week 9</h2>
+		<h3 class="readingCategory">Javascript: Novice to Ninja</h3>	
+		<h3 class="readingCategory">Chapter 9</h3>
+			<p class="readingText"> ~ You can create global variable without using const, let, or var. 
+                It is good to note that you should avoid referencing these global variables using window (window.globalVariable). 
+                The reasoning behind this is so that the code is portable between environments.
+            </p>
+            <p class="readingText"> ~ Confirm() is always a boolean and is dependent on the user's response. Alert() should 
+                always return undefined. Prompt() is a string that is dependent on what the user has entered. </p>
+            <p class="readingText"> ~ Review window methods.</p>
+            
+
+        <h3 class="readingCategory">Chapter 14</h3>
+        <p class="readingText"> ~ To embedd data in a web page using custom attributes that are ignored by the browser, use 
+            Javascript and data-attribute. The .getAttribute accesses the data-attributes. 
+        </p>
+        <p class="readingText"> ~ There are different forms of API, the geoLocation API provides the location and speed of 
+            a device, where the web storage API provides local storage functionality. To show messages using the system's notifications, 
+            use notification API. There is also a canvas API.
+        </p>
+        <p class="readingText"> ~ The protocol websockets allows two-way communication with a server. The server pushes responses
+            to the client over an open connection that stays open.
+        </p>
+
+        <div class='readingText'>
+            <h3>Examples</h3>
+            <button id='windowObject'>Press me to see window example</button>
+            <p class="readingText"> ~ The code for this button will work whether there is a window prefix or not!
+                This is an example for window objects.
+            </p>
+            <button id='windowWindow'>Press me to see window example</button>
+            <p class="readingText"> ~ The button is an example of a window opening a window. I think
+                    I need to work on the resizing, yes it resized well but the image was cut instead of
+                    being resized. 
+            </p>
+          </div>
+    
+	
+	<section class="report">
+		<h2 class="reportTitle">Week 9 Report/Scrum Meeting</h2>
+		<h3 class="reportCategory">What did I do since the last meeting?</h3>
+			<p class="reportText">I spent this week working on the team activity and learning
+                more about window objects and APIs. The API portion will come in handy for me come
+                week 11 when I try to work with them for my personal project. 
+            </p>
+		<h3 class="reportCategory">What am I going to do next?</h3>
+			<p class="reportText">Next week I will work to complete week ten's assignments and reading.
+            It looks like the focus will be validating forms and fetch. I will also be working on the UI
+            of my personal project!</p>
+		<h3 class="reportCategory">What are my blockers?</h3>
+			<p class="reportText"> My blocker this week was coming up with a personal project, however after
+                talking with my husband about bitcoin I was blessed with an idea that I actually will find useful!
+            </p>
+		<h3 class="reportCategory">Questions</h3>
+			<p class="reportText">I was able to resolve all questions on my own this week and even bounced ideas
+                and lessons off of my husband to expand my knowledge.</p>
+    </section>
+
+    <footer class="footer-content">
+        <p>&copy; 2021 | Stephanie Graf | California |
+          <a href="https://www.byui.edu/online " target="_blank">BYUI Online Learning</a>
+          <a href="../index.html">Home</a> </p>
+        <script>
+          const hambutton = document.querySelector(".ham");
+          hambutton.addEventListener("click", toggleMenu, false);
+    
+          function toggleMenu() {
+            document.querySelector(".navigation").classList.toggle("responsive");
+          }
+        </script>
+      </footer>
+</body>
+<script src="week9.js"></script>
+</html>
