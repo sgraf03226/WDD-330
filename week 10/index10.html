@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../css/style.css">
+<title>Week 10</title>
+</head>
+
+<body class="body-group">
+    <header class="header-group">
+        <div>
+          <div class="heading">
+    <h1 class="pageTitle">Week 10</h1>
+    <a href="../index.html">Home</a>
+</div>
+</div>
+</header>
+
+<div class="hero-image">
+</div>
+
+<body>
+	<section class="reading">
+		
+		<h2 class="readingTitle">Reading for Week 10</h2>
+		<h3 class="readingCategory">MDN</h3>	
+		<h3 class="readingCategory">Validating Forms</h3>
+			<p class="readingText"> ~ The purpose of client side form validation is to make sure that any data that is 
+                submitted through a form online will meet the necessary server requirements. It is important to note though,
+                that this should not be the only form of security. However, it does provide some protection for the company's 
+                servers as well as the end user.
+            </p>
+            <p class="readingText"> ~ With form validation you can make certain parts required to fill out, create a min/max 
+                length of characters, or request a type (emails, phone numbers, etc.) </p>
+            
+
+        <h3 class="readingCategory">Using Fetch</h3>
+        <p class="readingText"> ~ A fetch statement requests data from a website through a link. The response is converted 
+            into  a JSON format that can be modified through JS. The data is then logged into the console for the developer to 
+            view. The GET request unfortunately does not offer any security. If you would like to add security, use the POST method 
+            instead of the GET.
+        </p>
+        <p class="readingText"> ~ Example of Fetch:
+            <code>
+                fetch('http://example.com/games.json')
+                .then(response => response.json())
+                .then(data => console.log(data));
+            </code>
+        </p>
+        <p class="readingText"> ~ Example of POST:
+            <code>
+                fetch('https://example.com', {
+                    credentials: 'include'
+                  });
+            </code>
+        </p>
+    
+	
+	<section class="report">
+		<h2 class="reportTitle">Week 10 Report/Scrum Meeting</h2>
+		<h3 class="reportCategory">What did I do since the last meeting?</h3>
+			<p class="reportText">I spent this week working on the team activity and learning
+                more about Validating forms and Fetch. I also completed the UI portion of my personal project!
+            </p>
+		<h3 class="reportCategory">What am I going to do next?</h3>
+			<p class="reportText">Next week I will work to complete week eleven's assignments.
+            I will also be working on the API of my personal project! Considering the teacher's notes I will also be
+            looking at phone model versions for my personal project.</p>
+		<h3 class="reportCategory">What are my blockers?</h3>
+			<p class="reportText"> My blocker this week was realizing I haven't always pushed my assignments to Github
+                and turning in the wrong assignments to the wrong classes. I spent most of the week rectifying this and trying
+                not to feel overwhelmed!
+            </p>
+		<h3 class="reportCategory">Questions</h3>
+			<p class="reportText">I was able to resolve all questions on my own this week and even bounced ideas
+                and lessons off of my husband to expand my knowledge.</p>
+    </section>
+
+    <footer class="footer-content">
+        <p>&copy; 2021 | Stephanie Graf | California |
+          <a href="https://www.byui.edu/online " target="_blank">BYUI Online Learning</a>
+          <a href="../index.html">Home</a> </p>
+        <script>
+          const hambutton = document.querySelector(".ham");
+          hambutton.addEventListener("click", toggleMenu, false);
+    
+          function toggleMenu() {
+            document.querySelector(".navigation").classList.toggle("responsive");
+          }
+        </script>
+      </footer>
+</body>
+</html>
