@@ -17,7 +17,7 @@ function displayPortList()
 		{label: "URL: Week 9 Notes",	url: "week 9/index9.html"},
 		{label: "URL: Week 10 Notes",	url: "week 10/index10.html"},
 		{label: "URL: Week 11 Report",	url: "week 11/index11.html"},
-		{label: "URL: Week 13 Final",	url: "week 13/index13.html"}
+		{label: "URL: Week 13 Final",	url: "week 13/cyrptoIndex.html"}
 	]
 
 	const ol = document.getElementById('portfolioIndex');

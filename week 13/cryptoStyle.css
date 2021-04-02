@@ -1,0 +1,263 @@
+body {
+    text-align: center;
+    background-color: #6B717E;
+    color: #E28413;
+    color: #FBF5F3;
+    font-family: Arimo;
+   }
+   
+   h1 {
+     font-size: 42px;
+   }
+   
+   h2 {
+     font-size: 28px;
+   }
+   
+   h3 {
+     font-size: 28px;
+     height: 25px;
+   }
+   
+   h5 {
+     height: 14px;
+   }
+   
+   .hero-image {
+    background-image: url("https://picsum.photos//id/36/1920/400");
+    background-color: #838080;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; }
+
+   #exchangeContainer {
+     display: flex;
+     justify-content: center;
+   }
+   
+   .exchange {
+     color:FBF5F3;
+     background-color:#6B717E;
+     text-align: center;
+     margin: 10px;
+     border: 2px solid #E28413;
+     border-radius: 5px;
+     width: 175px;
+     height: 150px;
+   }
+   
+   .highest {
+     transform: scale(1.1);
+     box-shadow: 0 0 1rem #45062E;
+   }
+   
+   .price {
+     font-family: Raleway;
+     color: #E28413;
+     font-size: 24px;
+   }
+   
+   .total {
+     color: #FBF5F3;
+     font-size: 14px;
+   }
+   
+   .hl {
+     background-color: #E28413;
+   }
+   
+   #suggestions {
+     padding: 0;
+   }
+   
+   .coinList {
+     list-style-type: none;
+   }
+   
+   .coin {
+     width: 100%;
+     padding-top: 3px;
+     padding-bottom: 3px;
+   }
+   
+   .coin:hover {
+     background-color: #E28413;
+     color: #45062E;
+     cursor: pointer;
+     color: #6B717E;
+   }
+   
+   #search {
+     text-align: center;
+     color: #6B717E;
+     outline: 0;
+     border: 10px solid #FBF5F3;
+     border-radius: 5px;
+     font-size: 28px;
+   }
+   
+   #search:focus::placeholder {
+     color: transparent;
+   }
+   
+   #error {
+     font-size: 14px;
+     color: #E28413;
+   }
+   
+   #suggestions {
+     margin: 0;
+     padding: 0;
+     position: relative;
+   }
+
+   #suggestions li {
+     color: #45062E;
+     background: #FBF5F3;
+     list-style: none;
+     border-bottom: 1px solid #D8D8D8;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.14);
+     margin: 0 auto;
+     padding: 20px;
+     transition: background 0.2s;
+     display: flex;
+     justify-content: center;
+     width: 300px;
+   }
+   
+   #suggestions li:nth-child(even) {
+     transform: perspective(100px) rotateX(3deg) translateY(2px) scale(1.001);
+     background: linear-gradient(to bottom,  #ffffff 0%,#EFEFEF 100%);
+   }
+   
+   #suggestions li:nth-child(odd) {
+     transform: perspective(100px) rotateX(-3deg) translateY(3px);
+     background: linear-gradient(to top,  #ffffff 0%,#EFEFEF 100%);
+   }
+   
+   #addCoinInput {
+     text-align: center;
+     color: #6B717E;
+     outline: 0;
+     border: 5px solid #FBF5F3;
+     border-radius: 5px;
+     font-size: 14px;
+     margin: 10px;
+     width: 120px;
+   }
+   
+   #addExchange {
+     color: #6B717E;
+     border: 5px solid #FBF5F3;
+     border-radius: 5px;
+     font-size: 14px;
+     margin: 10px;
+     width: 120px;
+   }
+   
+   #addCoinButton {
+     text-align: center;
+     color: #6B717E;
+     outline: 0;
+     border: 5px solid #FBF5F3;
+     border-radius: 5px;
+     font-size: 14px;
+     margin: 10px;
+     width: 95px;
+     cursor: pointer;
+     margin-bottom: 25px;
+     margin-top: 25px;
+   }
+   
+   #addCoinButton:hover {
+     background-color: #E28413;
+     border: 5px solid #E28413;
+   }
+   
+   table {
+     background-color:#838c8d;
+     font-family: Roboto;
+     margin: 0 auto;
+     border-collapse: collapse;
+     color:  white;
+   }
+   
+   table th {
+     padding: 8px;
+     background-color: #E28413;
+     color:  #3c4650;
+     font-family: Playfair Designs;
+     font-size: 24px;
+     margin: 20px;
+     width: 200px;
+   }
+   
+   table th:hover {
+     color:#838c8d;
+     cursor: pointer; 
+   }
+   
+   table td {
+     padding-top: 12px;
+     padding-bottom: 12px;
+     border-color: #ddd;
+   }
+   
+   table tr {
+     padding-top: 20px;
+     padding-bottom: 20px;
+     transition: color 1.5s;
+   }
+   
+   table tr:nth-child(even){
+     background-color: #9aa5a7;
+   }
+   
+   table tr:hover{
+     background-color: #ddd;
+     color:  #3c4650;
+     cursor: pointer;
+   }
+   
+   table th:hover{
+     cursor: auto;
+   }
+   
+   .added {
+     color: #E28413;
+   }
+   
+   .deleted {
+     background-color: #ddd;
+     transition: opacity 1s;
+   }
+   
+   
+   @media screen and (max-width: 700px) {
+   
+     h1 {
+       font-size: 30px;
+     }
+   
+     #exchangeContainer {
+       display: grid;
+       margin: 0 auto;
+     }
+   
+     #search {
+       
+       font-size: 18px;
+     }
+
+     footer {
+      background-color: #45062E;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: space-around; }
+
+
+   }
+   
