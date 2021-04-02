@@ -94,7 +94,6 @@ export default class Crypto {
       return parseFloat(price);
     }
   
-      
     /********************************************
      * fetchBinance
      * Fetches the crypto coin prices from Binance
@@ -133,7 +132,7 @@ export default class Crypto {
       return parseFloat(price);
     }
 
-        /********************************************
+    /********************************************
      * fetchBittrex
      * Fetches the crypto coin prices from Bittrex
      *******************************************/
@@ -164,8 +163,8 @@ export default class Crypto {
       let total = 0.0;
   
       // local storage
-      if (ls.getItem("coins")) {
-        array = JSON.parse(ls.getItem("coins"));
+      if (localStorage.getItem("coins")) {
+        array = JSON.parse(localStorage.getItem("coins"));
       }
   
       // check ls for saved crypto coins and display price

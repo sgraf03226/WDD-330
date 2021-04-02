@@ -84,22 +84,22 @@ export default class SavedCoins {
   }
   
   /********************************************
-   * savels
+   * saveLocalStorage
    * Saves the crypto coin data to ls using an array
    *******************************************/
-  function savels(coinsArray) {
-    ls.setItem("coins", JSON.stringify(coinsArray));
+  function saveLocalStorage(coinsArray) {
+    localStorage.setItem("coins", JSON.stringify(coinsArray));
   }
   
   /********************************************
-   * loadls
+   * loadLocalStorage
    * Loads the crypto coin data from the ls,
    * if there is no data then an empty array is
    * returned
    *******************************************/
-  function loadls() {
-    if (ls.getItem("coins")) {
-      return JSON.parse(ls.getItem("coins"));
+  function loadLocalStorage() {
+    if (localStorage.getItem("coins")) {
+      return JSON.parse(localStorage.getItem("coins"));
     } else {
       return [];
     }
@@ -111,7 +111,7 @@ export default class SavedCoins {
    * data (amounts and exchange)
    *******************************************/
   function displayCoins(i = -1) {
-    let array = loadls();
+    let array = loadLocalStorage();
     let coinsTable = document.getElementById("coinsTable");
     coinsTable.innerHTML = "";
   
@@ -168,7 +168,7 @@ export default class SavedCoins {
    * this will add a crypto coin to the ls
    *******************************************/
   function addCoin() {
-    let array = loadls();
+    let array = loadLocalStorage();
     let coin = document.getElementById("search").placeholder;
     let amount = parseFloat(document.getElementById("addCoinInput").value);
     let exchange = document.getElementById("addExchange").value; 
@@ -199,7 +199,7 @@ export default class SavedCoins {
       if (!exists) {
         array.push({ name: coin, amount: amount, exchange: exchange });
       }
-      savels(array);
+      saveLocalStorage(array);
       displayCoins(i);
     }
   }
@@ -220,7 +220,7 @@ export default class SavedCoins {
     let exchange = this.getElementsByTagName("td")[2].innerHTML;
   
     // searches the ls array for the crypto coin to be removed
-    let array = loadls();
+    let array = loadLocalStorage();
     let index = -1;
     for(let i = 0; i < array.length; i++) {
       if (array[i].name == name && array[i].exchange == exchange && array[i].amount == amount) {
@@ -234,7 +234,7 @@ export default class SavedCoins {
     }
   
     // saves the new array to ls
-    savels(array);
+    saveLocalStorage(array);
   }
   
   
@@ -244,7 +244,7 @@ export default class SavedCoins {
    * in the table
    *******************************************/
   function sortByCoin() {
-    let array = loadls();
+    let array = loadLocalStorage();
     array.sort((a,b)=>{
       let aname = a.name;
       let bname = b.name;
@@ -252,7 +252,7 @@ export default class SavedCoins {
       if(aname > bname) {return 1;}
       return 0;
     });
-    savels(array);
+    saveLocalStorage(array);
     displayCoins();
   }
   
@@ -262,13 +262,13 @@ export default class SavedCoins {
    * the crypto coins in the table
    *******************************************/
   function sortByAmount() {
-    let array = loadls();
+    let array = loadLocalStorage();
   
     array.sort((a,b)=>{
       return b.amount - a.amount;
     });
   
-    savels(array);
+    saveLocalStorage(array);
     displayCoins();
   }
   
@@ -278,7 +278,7 @@ export default class SavedCoins {
    * coins in the table
    *******************************************/
   function sortByExchange() {
-    let array = loadls();
+    let array = loadLocalStorage();
     array.sort((a,b)=>{
       let aname = a.name;
       let bname = b.name;
@@ -294,6 +294,6 @@ export default class SavedCoins {
       if(aexchange > bexchange) {return 1;}
       return 0;
     })
-    savels(array);
+    saveLocalStorage(array);
     displayCoins();
   }
