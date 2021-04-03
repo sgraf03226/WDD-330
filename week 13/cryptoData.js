@@ -137,7 +137,7 @@ export default class Crypto {
      * Fetches the crypto coin prices from Bittrex
      *******************************************/
     async fetchBittrex(coin, element) {
-        const URL = `https://api.bittrex.com/api/v1.1/public/${coin}usd`;
+        const URL = `https://api/v1/market/allTickers/level1?symbol=${coin}USDT`;
         let price = await fetch(URL)
           .then((blob) => blob.json())
           .then((data) => {

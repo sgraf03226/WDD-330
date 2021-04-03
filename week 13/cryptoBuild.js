@@ -66,13 +66,13 @@ export default class CryptoBuild {
     exchangeDiv.className = "exchange";
 
     // Exchange names
-    const exchangeName = document.createElement("h2");
+    const exchangeName = document.createElement("h3");
     exchangeName.id = id + "Name";
     exchangeName.innerHTML = id.charAt(0).toUpperCase() + id.slice(1);
     exchangeDiv.appendChild(exchangeName);
 
     // Exchange prices
-    const price = document.createElement("h2");
+    const price = document.createElement("h3");
     price.id = id + "Price";
     price.className = "price";
     exchangeDiv.appendChild(price);

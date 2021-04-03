@@ -71,7 +71,7 @@ export default class SavedCoins {
   
       // crypto coins table
       let tableHead = document.createElement("h2");
-      tableHead.innerHTML = "My Coins";
+      tableHead.innerHTML = "My Cryptocurrency";
       this.parentElement.appendChild(tableHead);
   
       this.coinsTable = document.createElement("table");
