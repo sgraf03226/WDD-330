@@ -229,6 +229,6 @@ export default class Crypto {
     } else if (gPrice > bPrice && gPrice > cbpPrice && gPrice > bitPrice) {
       g.parentElement.classList.add("highest");
     }else if (bitPrice > gPrice && bitPrice > cbpPrice && bitPrice > bPrice) {
-        g.parentElement.classList.add("highest");
+        bit.parentElement.classList.add("highest");
       }
   }

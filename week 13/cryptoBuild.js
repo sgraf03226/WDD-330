@@ -128,12 +128,12 @@ export default class CryptoBuild {
           window.clearInterval(this.myInterval);
         }
 
-        // check the crypto coin price every 5000 ms
+        // check the crypto coin price every 10000 ms
         this.myInterval = window.setInterval(function () {
           const myCrypto = new Crypto(this.parentElement);
           myCrypto.getPriceAll(coin.symbol, `${coin.symbol} - ${coin.fullname}`);
           displayTime();
-        }, 5000);
+        }, 10000);
       });
     });
   }
