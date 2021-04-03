@@ -201,7 +201,7 @@ export default class Crypto {
     let b = document.getElementById("binancePrice");
     let cbp = document.getElementById("coinbaseProPrice");
     let g = document.getElementById("geminiPrice");
-    let bit = document.getElementById("getBitstamp");
+    let bit = document.getElementById("bitstampPrice");
   
     // remove the commas and dollar signs to properly compare prices
     let bPrice = parseFloat(b.innerHTML.substring(1).replace(/,/g, ""));
