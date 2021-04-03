@@ -26,7 +26,7 @@ export default class SavedCoins {
       this.addCoinInput.style.visibility = "hidden";
       this.parentElement.appendChild(this.addCoinInput);
   
-      // Exchange selected input from Binance, CoinbasePro, Bittrex and Gemini
+      // Exchange selected input from Binance, CoinbasePro, Bitstamp and Gemini
       this.addExchange = document.createElement("select");
       this.addExchange.id = "addExchange";
       this.addExchange.style.visibility = "hidden";
@@ -46,7 +46,7 @@ export default class SavedCoins {
       gOption.value = "Gemini";
       gOption.innerHTML = gOption.value;
       let bitOption = document.createElement("option");
-      bitOption.value = "Bittrex";
+      bitOption.value = "Bitstamp";
       bitOption.innerHTML = bitOption.value;
   
       this.addExchange.appendChild(eOption);

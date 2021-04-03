@@ -30,7 +30,7 @@ export default class CryptoBuild {
     this.buildExchangeDiv("coinbasePro", exchangeContainer);
     this.buildExchangeDiv("binance", exchangeContainer);
     this.buildExchangeDiv("gemini", exchangeContainer);
-    this.buildExchangeDiv("bittrex", exchangeContainer);
+    this.buildExchangeDiv("bitstamp", exchangeContainer);
 
     // Timestamp
     this.timestamp = document.createElement("h5");

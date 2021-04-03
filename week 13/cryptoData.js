@@ -2,7 +2,7 @@
  * Author: Stephanie Graf
  * cryptoData
  * Displays the fetched cryptocurrency data
- * from Binance, Gemini, Bittrex and CoinbasePro 
+ * from Binance, Gemini, Bitstamp and CoinbasePro 
  ********************************************/
 
 export default class Crypto {
@@ -40,7 +40,7 @@ export default class Crypto {
       this.bP = document.getElementById("binancePrice");
       this.cbpP = document.getElementById("coinbaseProPrice");
       this.gP = document.getElementById("geminiPrice");
-      this.bitP = document.getElementById("bittrexPrice");
+      this.bitP = document.getElementById("bitstampPrice");
       this.coin;
     }
   
@@ -64,12 +64,12 @@ export default class Crypto {
       this.bPrice = await this.fetchBinance(this.coin, this.bP);
       this.cPPrice = await this.fetchCoinBasePro(this.coin, this.cbpP);
       this.gPrice = await this.fetchGemini(this.coin, this.gP);
-      this.bitPrice = await this.fetchBittrex(this.coin, this.bitP);
+      this.bitPrice = await this.fetchBitstamp(this.coin, this.bitP);
   
       this.setPrice(this.bPrice, this.bP, "Binance");
       this.setPrice(this.cPPrice, this.cbpP, "CoinbasePro");
       this.setPrice(this.gPrice, this.gP, "Gemini");
-      this.setPrice(this.bitPrice, this.bitP, "Bittrex");
+      this.setPrice(this.bitPrice, this.bitP, "Bitstamp");
   
       callback();
     }
@@ -133,19 +133,19 @@ export default class Crypto {
     }
 
     /********************************************
-     * fetchBittrex
-     * Fetches the crypto coin prices from Bittrex
+     * fetchBitstamp
+     * Fetches the crypto coin prices from Bitstamp
      *******************************************/
-    async fetchBittrex(coin, element) {
-        const URL = `https://api/v1/market/allTickers/level1?symbol=${coin}USDT`;
+    async fetchBitstamp(coin, element) {
+        const URL = `https://www.bitstamp.net/api/ticker/${coin}usd`;
         let price = await fetch(URL)
           .then((blob) => blob.json())
           .then((data) => {
             return data.last;
           })
           .catch((error) => {
-            console.error("There is an error fetching Bittrex data", error);
-            this.setPrice("", element, "Bittrex");
+            console.error("There is an error fetching Bitstamp data", error);
+            this.setPrice("", element, "Bitstamp");
             return "";
           });
         return parseFloat(price);
@@ -201,7 +201,7 @@ export default class Crypto {
     let b = document.getElementById("binancePrice");
     let cbp = document.getElementById("coinbaseProPrice");
     let g = document.getElementById("geminiPrice");
-    let bit = document.getElementById(getBittrex);
+    let bit = document.getElementById("getBitstamp");
   
     // remove the commas and dollar signs to properly compare prices
     let bPrice = parseFloat(b.innerHTML.substring(1).replace(/,/g, ""));
