@@ -222,13 +222,19 @@ export default class Crypto {
     bit.parentElement.classList.remove("highest");
   
     // after the new comparison this adds the highlight back to whichever is priced the highest
-    if (bPrice > cbpPrice && bPrice > gPrice && bPrice > bitPrice) {
+    var allPrices = [bPrice, cbpPrice, gPrice, bitPrice];
+    allPrices.sort();
+    if (allPrices[allPrices.length -1] == bPrice){
       b.parentElement.classList.add("highest");
-    } else if (cbpPrice > bPrice && cbpPrice > gPrice && cbpPrice > bitPrice) {
+    }
+    if (allPrices[allPrices.length -1] == cbpPrice){
       cbp.parentElement.classList.add("highest");
-    } else if (gPrice > bPrice && gPrice > cbpPrice && gPrice > bitPrice) {
+    }
+    if (allPrices[allPrices.length -1] == gPrice){
       g.parentElement.classList.add("highest");
-    }else if (bitPrice > gPrice && bitPrice > cbpPrice && bitPrice > bPrice) {
-        bit.parentElement.classList.add("highest");
-      }
+    }
+    if (allPrices[allPrices.length -1] == bitPrice){
+      bit.parentElement.classList.add("highest");
+    }
+
   }
