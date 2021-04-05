@@ -40,7 +40,7 @@ export default class CryptoBuild {
     // Search
     this.search = document.createElement("input");
     this.search.type = "text";
-    this.search.placeholder = "search coins";
+    this.search.placeholder = "search (use down arrow)";
     this.search.id = "search";
     this.search.autocomplete = "off";
     this.search.addEventListener("change", this.displayMatches);

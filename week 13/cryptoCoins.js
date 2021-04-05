@@ -118,12 +118,12 @@ export default class SavedCoins {
     const tr = document.createElement("tr");
   
     const thCoin = document.createElement("th");
-    thCoin.innerHTML = "Coin";
+    thCoin.innerHTML = "Cryptocurrency";
     tr.appendChild(thCoin);
     thCoin.addEventListener('click', sortByCoin);
   
     const thAmount = document.createElement("th");
-    thAmount.innerHTML = "Amount";
+    thAmount.innerHTML = "Number of Coins";
     tr.appendChild(thAmount);
     thAmount.addEventListener('click', sortByAmount);
   
